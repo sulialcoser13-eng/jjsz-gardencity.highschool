@@ -1,0 +1,196 @@
+
+:root {
+    --brand-blue: #2289b2;
+    --brand-dark: #0fa3a3;
+    --brand-teal: #36727c;
+    --footer-blue: #2f4e68;
+    --light-grey: #1c7571;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    padding-bottom: 80px; 
+     background-image: url('graduate.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+.navbar {
+    background-color: white;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--light-grey);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: black;
+}
+
+
+.scholarship-header {
+    text-align: center;
+    padding: 60px 20px 20px;
+}
+
+.scholarship-header h1 {
+    font-size: 3rem;
+    color: var(--brand-dark);
+}
+
+.scholarship-header p {
+    color: var(--light-grey);
+    font-size: 1.2rem;
+}
+
+
+.scholarship-list {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.horizontal-box {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-left: 8px solid var(--brand-blue);
+}
+
+
+.horizontal-box:hover {
+    transform: translateY(-5px);
+    border-left: 8px solid var(--brand-teal);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    background-color: #fcfcfc;
+}
+
+.box-image img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-right: 30px;
+}
+
+.box-details {
+    flex-grow: 1;
+}
+
+.box-details h2 {
+    color: var(--brand-teal);
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.req-text {
+    color: #555;
+    font-size: 1rem;
+}
+
+.req-text strong {
+    color: var(--brand-blue);
+}
+
+
+.see-more-btn {
+    text-decoration: none;
+    background-color: var(--brand-dark);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px; 
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.see-more-btn:hover {
+    background-color: var(--brand-blue);
+    transform: scale(1.05);
+}
+
+
+.scrolling-footer {
+    background-color: var(--footer-blue);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll 25s linear infinite;
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+@media (max-width: 650px) {
+    .horizontal-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-image img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .box-action {
+        margin-top: 15px;
+    }
+}

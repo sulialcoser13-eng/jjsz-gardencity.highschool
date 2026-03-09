@@ -1,0 +1,151 @@
+
+.login-container {
+    position: relative;
+}
+
+
+.back-arrow {
+    position: absolute;
+    top: -80px;      
+    left: -100px;   
+    text-decoration: none;
+    font-size: 32px; 
+    color: #5d6d7e;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.back-arrow:hover {
+    color: #0070d2;
+    transform: scale(1.2); 
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+    gap: 12px;               
+    margin-bottom: 10px;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1.5px solid #aec6cf; 
+    border-radius: 50%;          
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;          
+}
+
+.logo-icon img {
+    width: 75%;               
+    height: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 30px;
+    color: #5d6d7e;             
+    font-weight: 400;
+}
+
+.school-name {
+    font-size: 22px;
+    color: #555;
+    font-weight: 400;
+}
+
+.login-card {
+    width: 360px;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #6c758d;   
+    color: #fff;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+.sign-in-btn {
+    background-color: #82b440;  
+    color: #fff;
+    border: 1px solid #719e37;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.sign-in-btn:hover {
+    background-color: #71a035;
+}

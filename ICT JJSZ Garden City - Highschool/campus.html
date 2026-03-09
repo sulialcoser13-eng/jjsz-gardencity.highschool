@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JJSZ Campus Display</title>
+    <link rel="stylesheet" href="campus.css">
+</head>
+<body>
+ <header class="navbar">
+        <div class="nav-container">
+            <a href="about-us.html" class="logo">
+                <img src="logo.png" alt="Garden City Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="about-us.html" class="active">back </a>
+            </nav>
+        </div>
+    </header>
+    <div class="gallery-container">
+        <input type="radio" name="slide" id="img-1" checked>
+        <input type="radio" name="slide" id="img-2">
+        <input type="radio" name="slide" id="img-3">
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="arts and music.jpg"></div>
+                <div class="slide"><img src="pool.jpg"></div>
+                <div class="slide"><img src="entrance.jpg"></div>
+            </div>
+
+            <div class="controls ctrl-1">
+                <label for="img-3" class="arrow">❮</label>
+                <label for="img-2" class="arrow">❯</label>
+            </div>
+            <div class="controls ctrl-2">
+                <label for="img-1" class="arrow">❮</label>
+                <label for="img-3" class="arrow">❯</label>
+            </div>
+            <div class="controls ctrl-3">
+                <label for="img-2" class="arrow">❮</label>
+                <label for="img-1" class="arrow">❯</label>
+            </div>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="map-wrapper">
+        <img src="structure.jpg" class="map-bg">
+
+        <input type="checkbox" id="main-check" class="toggle">
+        <input type="checkbox" id="science-check" class="toggle">
+        <input type="checkbox" id="arts-check" class="toggle">
+        <input type="checkbox" id="park-check" class="toggle">
+        <input type="checkbox" id="entrance-check" class="toggle">
+        <input type="checkbox" id="sport-check" class="toggle">
+        <input type="checkbox" id="pool-check" class="toggle">
+
+        <label for="science-check" class="tag science-pos">🔬 Science lab & Library</label>
+        <label for="main-check" class="tag main-pos">🏫 Main Hall</label>
+        <label for="arts-check" class="tag arts-pos">🎨 Arts & Music</label>
+        <label for="park-check" class="tag parking-pos">🚗 Parking</label>
+        <label for="entrance-check" class="tag entrance-pos">⛩️ Entrance</label>
+        <label for="sport-check" class="tag sport-pos">⚽ Sports Field</label>
+        <label for="pool-check" class="tag pool-pos">🏊 Pool</label>
+
+        <div class="info-card science-card">
+            <h2>Science & Library</h2>
+            <p>Advanced laboratories for well equipped room where students carry out experiments. 
+                Contains lab benches, scientific equipment and safety tools and a 
+                quiet digital library for research.</p>
+            <label for="science-check" class="close-btn">CLOSE INFO</label>
+        </div>
+
+        <div class="info-card main-card">
+            <h2>Main Hall</h2>
+            <p>The heart of campus used for assemblies, meetings and special events.</p>
+            <label for="main-check" class="close-btn">CLOSE INFO</label>
+        </div>
+
+        <div class="info-card arts-card">
+            <h2>Arts & Music</h2>
+            <p>Creative space where students explore painting and drawing while others sing and play instruments.
+                 It is equipped with art supplies, musical instruments and areas to display..</p>
+            <label for="arts-check" class="close-btn">CLOSE INFO</label>
+        </div>
+
+        <div class="info-card park-card">
+            <h2>Parking Lot</h2>
+            <p>Designated parking area for staff and visitors.</p>
+            <label for="park-check" class="close-btn">CLOSE INFO</label>
+        </div>
+
+        <div class="info-card entrance-card">
+            <h2>Main Entrance</h2>
+            <p>The JJSZ High School commemorative archway.</p>
+            <label for="entrance-check" class="close-btn">CLOSE INFO</label>
+        </div>
+
+        <div class="info-card sport-card">
+            <h2>Sports Field</h2>
+            <p>Regulation turf for football, soccer, and track events.Used for sports
+                day and PE practice or practicals.
+            </p>
+            <label for="sport-check" class="close-btn">CLOSE INFO</label>
+        </div>
+
+        <div class="info-card pool-card">
+            <h2>Swimming Pool</h2>
+            <p>The main pool used for agriculture and tourism class for
+                 special events (for safety sometimes under supervision
+                  for swimming activities)</p>
+            <label for="pool-check" class="close-btn">CLOSE INFO</label>
+        </div>
+    </div>
+</div> <footer class="scrolling-footer">
+        <div class="marquee">
+            Building Knowledge - Shaping Character • Building Knowledge - Shaping Character • Building Knowledge - Shaping Character • Building Knowledge - Shaping Character
+        </div>
+    </footer>
+</body>
+</html>

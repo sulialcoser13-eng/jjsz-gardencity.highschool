@@ -1,0 +1,209 @@
+:root {
+    --form1-green: #2ecc71;
+    --form2-yellow: #f1c40f;
+    --form3-blue: #3498db;
+    --form4-red: #e74c3c;
+    --navy: #154360;
+}
+
+body{
+     background-image: url('fomrs.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.levels-header h1 {
+    font-size: 4rem;             
+    font-weight: 900;           
+    color: rgb(254, 255, 255);             
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); 
+    text-transform: none;        
+    margin-bottom: 5px;
+    letter-spacing: -1px;      
+}
+
+
+.levels-header p {
+    color: rgb(19, 6, 6);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.navbar {
+    background-color: white;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.simple-logo {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #7f8c8d;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: black;
+}
+
+.levels-header {
+    text-align: center;
+    padding: 120px 20px 40px;
+}
+
+.levels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.level-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.level-card:hover { transform: translateY(-10px); }
+
+.level-banner {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form-1 .level-banner { background: var(--form1-green); }
+.form-2 .level-banner { background: var(--form2-yellow); color: #333; }
+.form-3 .level-banner { background: var(--form3-blue); }
+.form-4 .level-banner { background: var(--form4-red); }
+
+.level-info { padding: 25px; }
+
+.see-more-btn {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    background: #f0f0f0;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none; 
+}
+
+.details-content {
+    margin-top: 15px;
+    padding: 20px;
+    background: rgba(0,0,0,0.03);
+    border-radius: 12px;
+    font-size: 0.95rem;
+    animation: fadeIn 0.4s ease;
+}
+
+.dash-divider {
+    border: none;
+    border-top: 2px dashed #ccc;
+    margin: 15px 0;
+}
+
+.course-list {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.votech-detailed {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.attire-section {
+    background: var(--navy);
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.attire-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.attire-box {
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 850px) {
+    .levels-grid, .attire-grid { grid-template-columns: 1fr; }
+}
+.scrolling-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll 25s linear infinite;
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+@media (max-width: 768px) {
+    .nav-links { gap: 15px; font-size: 14px; }
+    .opportunity-row { flex-direction: column; text-align: center; gap: 10px; }
+}

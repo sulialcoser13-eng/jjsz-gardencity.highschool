@@ -1,0 +1,131 @@
+
+.jungle-bg {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('national\ symbols.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-bottom: 80px;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.main-logo {
+    width: 120px; 
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+.top-header { text-align: center; padding: 50px 0; }
+.main-logo { width: 140px; filter: drop-shadow(0 0 10px white); }
+.page-title { color: rgb(255, 255, 255); font-size: 2.8rem; text-shadow: 2px 2px 15px black; }
+
+.glass-card {
+    background: #637c8b;
+    width: 85%;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 10px; 
+     border-top: 15px solid #a32823;    
+    border-bottom: 15px solid #a32823; 
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.glass-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: #1a4a6e;
+}
+
+.glass-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+transform: translateY(-5px); 
+}
+
+.hidden-part {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease, opacity 0.5s ease;
+}
+
+.expand-content.active .hidden-part {
+    max-height: 1500px; 
+    opacity: 1;
+    margin-top: 20px;
+}
+
+
+.see-more-btn {
+    background: #b91717;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.see-more-btn:hover { background: #d45039; transform: scale(1.1); }
+
+
+.chorus { font-weight: 800; color: #0c3f66; font-size: 1.2rem; }
+.bridge { font-weight: 900; background: #637c8b; padding: 15px; margin: 15px 0; border-radius: 10px; }
+.highlight-box { border-left: 10px solid #b11e1e; }
+.pledge { font-style: italic; font-size: 1.3rem; color: #000000; line-height: 1.8; }
+
+.highlight-box {
+    border-top: 15px solid #a32823;     
+    border-bottom: 15px solid #a32823; 
+    border-left: 10px solid #1a4a6e;   
+    border-right: 10px solid #1a4a6e; 
+}
+.scrolling-footer {
+    background-color: #2f4e68; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll 25s linear infinite;
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+@media (max-width: 768px) {
+    .nav-links { gap: 15px; font-size: 14px; }
+    .opportunity-row { flex-direction: column; text-align: center; gap: 10px; }
+}

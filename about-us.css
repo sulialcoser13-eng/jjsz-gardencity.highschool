@@ -1,0 +1,215 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar {
+    background-color: white;
+    padding: 10px 0;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #7f8c8d;
+    font-weight: 600;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #000;
+}
+
+
+.main-background {
+    flex: 1; 
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('yard.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 40px 20px 120px;
+}
+
+.hero h1 {
+    text-align: center;
+    color: white;
+    font-size: 3.8rem;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 15px rgba(0,0,0,0.7);
+}
+
+.hover-box {
+    background-color: rgba(43, 73, 73, 0.95); 
+    color: white;
+    border-radius: 20px;
+    padding: 45px;
+    margin-bottom: 40px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.hover-box:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    background-color: rgba(43, 73, 73, 1);
+}
+
+.who-we-are {
+    max-width: 950px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    max-width: 1150px;
+    margin: 0 auto 60px auto;
+}
+
+.info-box {
+    flex: 1;
+    text-align: center;
+}
+
+
+.secretary-glass {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.12); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 35px;
+    padding: 45px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    
+
+    transition: all 0.4s ease-in-out;
+    cursor: default;
+}
+
+.secretary-glass:hover {
+    transform: translateY(-15px) scale(1.02);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.4);
+}
+
+.icon-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.clock-icon {
+    font-size: 2.2rem;
+}
+
+.secretary-glass h3 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.hours-grid {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px 0;
+    margin: 25px 0;
+}
+
+.day-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    font-size: 1.3rem;
+}
+
+.day-row.closed {
+    color: #ffcccc; 
+    font-weight: 700;
+}
+
+.note {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    text-align: center;
+    font-style: italic;
+}
+
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.icon-link img {
+ height: 60px;
+width: 60px;
+border-radius: 50%;
+object-fit: cover;
+ background: white;
+transition: transform 0.3s ease;
+}
+
+.icon-link:hover img {
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.footer-link {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJSZ Garden City High School - Courses</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="home.html" class="logo">
+                    <img src="logo.png" alt="Garden City Highschool Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="promotions.html">Promotions</a></li>
+                    <li><a href="Scholarships.html">Scholarships</a></li>
+                    <li><a href="other options.html">Other Options</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="fees.html">fees</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Our Core Courses</h2>
+        
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="card-img" style="background-image: url('mathematics.png');">
+                    <div class="hover-info">Advanced calculus, algebra, and problem-solving skills.</div>
+                </div>
+                <h3>Mathematics</h3>
+            </div>
+            
+            <div class="course-card">
+                <div class="card-img" style="background-image: url('english.png');">
+                    <div class="hover-info">Literature analysis, creative writing, and grammar mastery.</div>
+                </div>
+                <h3>English</h3>
+            </div>
+
+            <div class="course-card">
+                <div class="card-img" style="background-image: url('social-studies.png');">
+                    <div class="hover-info">Exploring history, geography, and global citizenship.</div>
+                </div>
+                <h3>Social Studies</h3>
+            </div>
+
+            <div class="course-card">
+                <div class="card-img" style="background-image: url('spanish.png');">
+                    <div class="hover-info">Developing fluency in speaking, reading, and writing Spanish.</div>
+                </div>
+                <h3>Spanish</h3>
+            </div>
+
+            <div class="course-card">
+                <div class="card-img" style="background-image: url('life-skills.png');">
+                    <div class="hover-info">Practical skills for personal development and career success.</div>
+                </div>
+                <h3>Life Skills</h3>
+            </div>
+
+            <div class="course-card">
+                <div class="card-img" style="background-image: url('information-technology.png');">
+                    <div class="hover-info">Coding, digital literacy, and computer science fundamentals.</div>
+                </div>
+                <h3>Information Technology</h3>
+            </div>
+        </div>
+
+        <hr class="section-divider">
+
+        <h2>Other Opportunities</h2>
+
+        <div class="extra-opportunities">
+            <div class="opportunity-row-container">
+                <div class="opportunity-row">
+                    <div class="circle-img" style="background-image: url('robotics.png');"></div>
+                    <div class="opp-text">
+                        <h3>Robotics</h3>
+                        <button class="see-more-btn" onclick="toggleInfo('robotics-info')">See More</button>
+                    </div>
+                </div>
+                <div id="robotics-info" class="more-info-content">
+                    Learn to build and program robots using state-of-the-art kits. This course covers mechanical engineering and logic coding.
+                </div>
+            </div>
+
+            <div class="opportunity-row-container">
+                <div class="opportunity-row">
+                    <div class="circle-img" style="background-image: url('university-prep.png');"></div>
+                    <div class="opp-text">
+                        <h3>University Preparation</h3>
+                        <button class="see-more-btn" onclick="toggleInfo('uni-info')">See More</button>
+                    </div>
+                </div>
+                <div id="uni-info" class="more-info-content">
+                    Guidance on college applications, SAT prep, and choosing the right career path for your future.
+                </div>
+            </div>
+
+            <div class="opportunity-row-container">
+                <div class="opportunity-row">
+                    <div class="circle-img" style="background-image: url('planting.png');"></div>
+                    <div class="opp-text">
+                        <h3>Crop Planting</h3>
+                        <button class="see-more-btn" onclick="toggleInfo('crop-info')">See More</button>
+                    </div>
+                </div>
+                <div id="crop-info" class="more-info-content">
+                    Hands-on agricultural experience learning about soil health, sustainability, and seasonal harvesting.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="scrolling-footer">
+        <div class="marquee">
+            Building Knowledge - Shaping Character • Building Knowledge - Shaping Character • Building Knowledge - Shaping Character • Building Knowledge - Shaping Character
+        </div>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

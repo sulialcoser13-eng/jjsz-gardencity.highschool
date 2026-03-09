@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mascot | Garden City Highschool</title>
+    <link rel="stylesheet" href="mascot.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="logo">
+                <img src="logo.png" alt="Garden City Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="mascot.html" class="active">Our Mascot</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="jungle-wrapper">
+        <section class="hero-section">
+            <h1 class="main-title">HOME OF THE JAGUARS</h1>
+            <div class="massive-mascot-container">
+                <img src="mascots.jpeg" alt="JJSZ Mascot" class="hero-mascot-img">
+                <div class="aurora-glow"></div>
+                <div class="mascot-name">KODA</div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="compact-glass-card">
+                <div class="compact-grid">
+                    <div class="zoom-box-small">
+                        <img src="jaguars.jpg" alt="Jaguar Close-up" class="jaguar-zoom">
+                    </div>
+                    <div class="text-content-small">
+                        <h2>The Spirit of the Jaguar</h2>
+                        <div class="accent-line"></div>
+                        <p class="intro-text">The Jaguar is the soul of <strong>JJSZ Garden City Highschool</strong>.</p>
+                        
+                        <ul class="spirit-list">
+                            <li><span>🐾</span> <strong>Resilience:</strong> Built to overcome every challenge.</li>
+                            <li><span>🐾</span> <strong>Intelligence:</strong> A strategic thinker in every path.</li>
+                            <li><span>🐾</span> <strong>Leadership:</strong> Shaping the future leaders of Belize.</li>
+                             <li><span>🐾</span> <strong>Established:</strong> Garden City Highschool was established on February 20th, 1978.</li>
+                        </ul>
+                        
+                        <blockquote class="motto-small">
+                            "Building Knowledge - Shaping Character"
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="slider-container-clean">
+                <div class="mySlides fade">
+                    <img src="home team.jpeg" alt="Home Team">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mascot girls.jpeg" alt="Mascot Girls">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Mascot team.jpeg" alt="Mascot Team">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mascot trees.jpeg" alt="Mascot Trees">
+                </div>
+                <div class="mySlides fade">
+                    <img src="mascot trio.jpeg" alt="Mascot Trio">
+                </div>
+
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                        </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="scrolling-footer">
+        <div class="marquee">
+            Building Knowledge - Shaping Character • Building Knowledge - Shaping Character • Building Knowledge - Shaping Character • Building Knowledge - Shaping Character
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        let slideTimer;
+        showSlides();
+
+        function currentSlide(n) {
+            clearTimeout(slideTimer);
+            showSlides(slideIndex = n - 1);
+        }
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active-dot", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active-dot";
+            
+            slideTimer = setTimeout(showSlides, 4000); 
+        }
+    </script>
+</body>
+</html>

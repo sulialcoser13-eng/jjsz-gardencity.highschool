@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Pride | Garden City Highschool</title>
+    <link rel="stylesheet" href="belize national.css">
+</head>
+<body>
+
+    <div class="jungle-bg">
+        <header class="top-header">
+    <a href="home.html" class="logo-link">
+        <img src="logo.png" alt="Garden City Logo" class="main-logo">
+    </a>
+    <h1 class="page-title">National Symbols & School Spirit</h1>
+</header>
+        <main class="container">
+            
+            <section class="glass-card">
+                <h2>JJSZ School Song</h2>
+                <div class="expand-content" id="song-box">
+                    <p class="visible-part"><strong>Verse 1</strong><br>
+                    In the halls where our journey begins,<br>
+                    Core discovery is where we win...</p>
+                    
+                    <div class="hidden-part">
+                        <p>Building foundations, we’re finding our way,<br>
+                        Garden City energy leads the day!</p>
+                        <p class="chorus"><strong>Chorus</strong><br>
+                        Oh, we follow the Academic Path, Four years of growth and light!<br>
+                        With character, knowledge, and JJSZ, Our spirit is shining so bright!<br>
+                        <span class="shout">(Shout: J-J-S-Z! Garden City is the key!)</span></p>
+                        <p><strong>Verse 2</strong><br>
+                        From the First Form where wonder is found,<br>
+                        To the heights where our dreams are unbound.<br>
+                        Roots in the earth, eyes on the sun, JJSZ, we’ve only begun!</p>
+                        <div class="bridge"><strong>Bridge:</strong> Growth... (Stomp!) <br> Character... (Stomp!) <br> Knowledge... (Stomp!) <br> GARDEN CITY PRIDE!</div>
+                        <p class="outro">Home of the JJSZ!<br> Stronger together. Garden City forever!<br> Our Academic Path. Our school pride.<br><strong>STAY HUNGRY!</strong></p>
+                        <p>-Carleem Sanchez.</p>
+                    </div>
+                </div>
+                <button class="see-more-btn" onclick="toggleExpand('song-box', this)">See More</button>
+            </section>
+
+            <section class="glass-card">
+                <h2>National Anthem of Belize</h2>
+                <div class="expand-content" id="anthem-box">
+                    <p class="visible-part">O, Land of the Free by the Carib Sea,<br>
+                    Our manhood we pledge to thy liberty!...</p>
+                    
+                    <div class="hidden-part">
+                        <p>No tyrants here linger, despots must flee<br>
+                        This tranquil haven of democracy<br>
+                        The blood of our sires which hallows the sod,<br>
+                        Brought freedom from slavery oppression’s rod,<br>
+                        By the might of truth and the grace of God,<br>
+                        No longer shall we be hewers of wood.</p>
+                        <p class="chorus"><strong>Chorus:</strong><br>
+                        Arise! ye sons of the Baymen’s clan,<br>
+                        Put on your armour, clear the land!<br>
+                        Drive back the tyrants, let despots flee –<br>
+                        Land of the Free by the Carib Sea!</p>
+                        <p>Nature has blessed thee with wealth untold,<br>
+                        O’er mountains and valleys where prairies roll;<br>
+                        Our fathers, the Baymen, valiant and bold<br>
+                        Drove back the invader; this heritage hold<br>
+                        From proud Rio Hondo to old Sarstoon,<br>
+                        Through coral isle, over blue lagoon;<br>
+                        Keep watch with the angels, the stars and moon;<br>
+                        For freedom comes tomorrow’s noon.</p>
+                    </div>
+                </div>
+                <button class="see-more-btn" onclick="toggleExpand('anthem-box', this)">See More</button>
+            </section>
+
+            <section class="glass-card">
+                <h2>National Prayer</h2>
+                <div class="expand-content" id="prayer-box">
+                    <p class="visible-part">Almighty and Eternal God, who through Jesus Christ<br>
+                    has revealed Your Glory to all nations...</p>
+                    
+                    <div class="hidden-part">
+                        <p>please protect and preserve Belize, our beloved country.<br>
+                        God of might, wisdom and justice, please assist our Belizean government and people with your Holy Spirit of counsel and fortitude.</p>
+                        <p>Let the light of Your divine wisdom direct their plans and endeavours so that with Your help we may attain our just objectives. With Your guidance, may all our endeavours tend to peace, social justice, liberty, national happiness, the increase of industry, sobriety and useful knowledge.</p>
+                        <p>We pray, O God of Mercy, for all of us that we may be blessed in the knowledge and sanctified in the observance of Your most holy law, that we may be preserved in union and in that peace which the world itself cannot give. And, after enjoying the blessings of this life, please admit us, dear Lord, to that eternal reward that You have prepared for those who love You. Amen.</p>
+                    </div>
+                </div>
+                <button class="see-more-btn" onclick="toggleExpand('prayer-box', this)">See More</button>
+            </section>
+
+            <section class="glass-card highlight-box">
+                <h2>National Pledge</h2>
+                <p class="pledge">"Belize is my country. Belize is my family, my school, my church, and my community. I am the hope of Belize, the hope of my parents and my teachers, the hope of today and tomorrow. I live and learn not only for myself, but for my sisters and brothers. I am the hope of Belize. I promise to serve Belize as faithfully as I can."</p>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        function toggleExpand(boxId, btn) {
+            const content = document.getElementById(boxId);
+            content.classList.toggle('active');
+            
+            if (content.classList.contains('active')) {
+                btn.textContent = 'See Less';
+            } else {
+                btn.textContent = 'See More';
+            }
+        }
+    </script>
+     <footer class="scrolling-footer">
+        <div class="marquee">
+            Building Knowledge - Shaping Character • Building Knowledge - Shaping Character • Building Knowledge - Shaping Character • Building Knowledge - Shaping Character
+        </div>
+    </footer>
+</body>
+</html>
